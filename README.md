@@ -19,7 +19,21 @@ pnpm build
 pnpm start README.md
 ```
 
-After linking the package, the CLI shape is:
+## Nix Run
+
+From the repository root:
+
+```sh
+nix run . -- README.md
+```
+
+From another directory:
+
+```sh
+nix run path:/home/warren/source/mdview -- /absolute/path/to/file.md
+```
+
+After linking or installing the package, the CLI shape is:
 
 ```sh
 mdview README.md

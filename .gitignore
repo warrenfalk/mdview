@@ -1,6 +1,7 @@
 dist
 node_modules
 out
+result
 .direnv
 .env.local
 .pnpm-store

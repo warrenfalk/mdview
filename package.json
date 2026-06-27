@@ -1,0 +1,40 @@
+{
+  "name": "mdview",
+  "version": "0.1.0",
+  "description": "An Electron markdown viewer that watches files and live-updates the rendered view.",
+  "type": "module",
+  "main": "out/main/index.js",
+  "bin": {
+    "mdview": "bin/mdview"
+  },
+  "packageManager": "pnpm@10.34.0",
+  "scripts": {
+    "build": "pnpm run typecheck && electron-vite build",
+    "dev": "node scripts/dev.cjs",
+    "format": "prettier --write .",
+    "start": "node bin/mdview.cjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "electron": "41.7.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^24.10.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "electron-vite": "^5.0.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0"
+  }
+}
